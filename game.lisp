@@ -6,6 +6,8 @@
 ; From Assignment 05 ;
 ;;;;;;;;;;;;;;;;;;;;;;
 
+(format t "Type (game) to start game")
+
 ;; Define a function or macro (num-props obj) which returns the number of properties in a list. Hint, you may want to use the Common Lisp function length.
 (defun num-props (obj)
   "Returns number of properties of object"
