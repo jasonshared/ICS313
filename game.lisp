@@ -329,13 +329,13 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
 				  (contents (fat-pompous-bastard))
 				  (west hallway2north)))
 			(yourroom ((displayname "your room")
-				   (describe "Your room.")
+				   (describe "Your room. Since you aren't the killer, there shouldn't be any clues here, or is there?~%")
 				   (west hallway2)))
 			(vacantroom1 ((state 0)
 				     (displayname "a vacant room")
 				     (describe (cond 
 						 ((= (get-prop rooms 'vacantroom1 'state) 0)
-						  "A vacant room.~%The hallway is to the right.")
+						  "A vacant room.~%There does not appear to be anything interesting here.~%The hallway is to the right.")
 						 ((= (get-prop rooms 'vacantroom1 'state) 1)
 						  "A vacant room.~%You notice a drawer. (Maybe this is what the widow was talking about?)~%The hallway is to the right.")))
 				     (east hallway2)
@@ -959,7 +959,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
 		;; Fat-pompous-bastard
                 (Second-Place-Riddle
                  (Riddle (lambda () (format t "In the final stretch of a road race, you pass the 2nd-place runner right before crossing the finish line. What place do you finish in?~%~%Your Answer: ")))
-                 (Answer (lambda () "Second"))
+                 (Answer (lambda () "Second/2/2nd"))
                  (Result (lambda ()
                            (format t "That's correct!~%") (set-conv-state fat-pompous-bastard conv-place-1 1)
 			   (format t "The fat pompous bastard laughs.  See, you cannot win.. Loser!  And by the way, you can't look in my room.  Go to the bathroom by the lobby.  I took a huge shit there earlier.  Bask in its smell, it may help you.~%")))
