@@ -1561,7 +1561,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
 (defun reset-state()
   (set-prop game-state 'current-room 'lobby)
   (set-prop (get-room 'lobby) 'state 0)
-  (set-prop (get-room 'lobby) 'contents '(police butler married-couple fat-pompous-bastard young-rich-widow))
+  (set-prop (get-room 'lobby) 'contents '(police butler married-couple fat-pompous-bastard young-rich-widow dead-body))
   (set-prop pouch 'contents nil)
   )
 
