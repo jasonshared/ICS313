@@ -453,6 +453,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
     (video-tape ((describe (lambda () (format t "A video tape of the couple's honeymoon showing everyone at the party.~%")))))
     (drawer ((describe (lambda () (format t "An ordinary drawer...~%~%...~%~%What a minute.. there's a fake bottom to the drawer!  You open it and find a rolled up piece of paper.~%")
 			       (add-inventory will)
+			       (remove-from-container 'will (get-current-room))
 			       (format t "~%You received the will.~%~%")))))
     (dead-body ((describe (lambda () (format t "This is horrible.  It seems that the host was just killed.  The body is still warm.~%")))))
     )
