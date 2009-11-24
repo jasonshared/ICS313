@@ -1496,7 +1496,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
   (enter-to-continue2)
   (format t "You hear insane laughing as the police officer goes on a rage.  \"Impressive!  IMPRESSIVE!  I'M AMAZED YOU FIGURED IT OUT BY YOURSELF!\" yells the cop hysterically.~%")
   (enter-to-continue2)
-  (format t "\"I'M SORRY BUT I CAN'T LET YOU LIVE.  I CAN'T LET ANY OF YOU LIVE KNOWING MY SECRET!\" says the cop as he pulls out his gun and points it you everyone in the room.")
+  (format t "\"I'M SORRY BUT I CAN'T LET YOU LIVE.  I CAN'T LET ANY OF YOU LIVE KNOWING MY SECRET!\" says the cop as he pulls out his gun and wildly points it at everyone in the room.")
   (enter-to-continue2)
   (format t "Just as the cop was about to pull the trigger, the butler breaks a vase on his head from behind and knocks him unconscious.~%")
   (enter-to-continue2)
