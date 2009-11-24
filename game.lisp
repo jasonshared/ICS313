@@ -331,7 +331,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
 			(yourroom ((displayname "your room")
 				   (describe "Your room.")
 				   (west hallway2)))
-			(vacantroom1((state 0)
+			(vacantroom1 ((state 0)
 				     (displayname "a vacant room")
 				     (describe (cond 
 						 ((= (get-prop rooms 'vacantroom1 'state) 0)
