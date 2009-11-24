@@ -1268,7 +1268,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
         (progn
           (cond
             ;; First time leaving the lobby
-            ((equalp (get-prop (get-current-room) 'state) 0)
+            ((equalp (get-prop (get-room 'lobby) 'state) 0)
              (format t "Are you sure you want to leave the lobby? (y/n) ")
              (if (y-or-n-p)
                  (progn
