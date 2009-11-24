@@ -486,15 +486,15 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
       (lambda () (conv-engine police 2 2))
       (lambda () (format t "Police officer: Not even worth my time...~%") (game-over)))
      (q-2
-      (lambda () (format t "Police officer: The only thing you did was show me the way to my dead brother's fortune!~%~%You say:~%")))
+      (lambda () (format t "Police officer: The only thing you did was show me the way to this mansion's fortune!~%~%You say:~%")))
      (a-2
       (lambda () (format t "(1) **Leave**~%"))
       (lambda () (format t "(2) **Yell at the top of your lungs, \"HELP!\"**~%"))
-      (lambda () (format t "(3) Your brother had a brilliant and powerful imagination, the reason why your father left you out of the will was because you did not share their love for mystery.  You will find no treasure up there if all you search for is the tangible!~%")))
+      (lambda () (format t "(3) I know that's what you're after, and nothing here anyway!~%")))
      (r-2
       (lambda () (death-end))
       (lambda () (conv-engine police 2 3))
-      (lambda () (format t "Police officer: If what you say is true, I gained nothing from this foolish escapade.  At least I rid the world of my brother's silly antics.. why stop there?~%The police officer pulls out his gun and a flash ends it all..~%")))
+      (lambda () (format t "Police officer: If what you say is true, I gained nothing from this foolish escapade.~%The police officer pulls out his gun and a flash ends it all..~%")))
      (q-3
       (lambda () (format t "Police officer: FREEZE!~%The police pulls out his weapon in a desperate attempt to turn the tables and frame you!  You hear the rest of the party run out, drawn from the commotion.~%~%You say:~%")))
      (a-3
@@ -1249,7 +1249,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
     ((search-string "phone log" input) 'phone-log)
     ((search-string "attic key attic-key" input) 'attic-key)
     ((search-string "umbrella" input) 'umbrella)
-    ((search-string "video tape" input) 'video-tape)
+    ((search-string "video tape video-tape" input) 'video-tape)
     ((search-string "will" input) 'will)
     ((search-string "knife" input) 'knife)
     ((search-string "safe" input) 'safe)
@@ -1391,7 +1391,7 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
   (enter-to-continue2)
   (format t "\"Please.  Do tell.\" said the butler.~%")
   (enter-to-continue2)
-  (format t "\"Yes please tell us!\" pleaded the young rich wife.~%")
+  (format t "\"Yes please tell us!\" pleaded the young rich widow.~%")
   (enter-to-continue2)
   (format t "\"Alright.\" you reply.  \"I have been searching around this house for clues and have found something extremely important.\"~%")
   (enter-to-continue2)
@@ -1455,9 +1455,9 @@ The ballroom is up ahead and the elevator is behind you.  There are two doors to
   (enter-to-continue2)
   (format t "The cop's eyes widened as if he had seen a ghost.  \"T-T-That's j-just not possible!!  I-I-I-I was at the station the whole time!\" he said, almost out of breath.~%")
   (enter-to-continue2)
-  (format t "(Yes!  It worked!  I knew he was here last night!)~%")
+  (format t "(Yes!  It worked!  I knew he was here at the party!)~%")
   (enter-to-continue2)
-  (format t "\"Oh no!  You were here!  And not by just mere coincedence!  You wanted to murder the host tonight!\" you declare.~%")
+  (format t "\"Oh no!  You were here!  And not by just mere coincedence!  You wanted to murder the host at the party!\" you declare.~%")
   (enter-to-continue2)
   (format t "All eyes turn to the police officer once more as he starts to sweat profusely.~%")
   (enter-to-continue2)
